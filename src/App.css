@@ -30,7 +30,7 @@ body {
 }
 
 .char-card {
-  width: 500px; /* Широкая карточка в стиле оригинального сайта */
+  width: 500px; 
   display: flex;
   background: #3c3e44;
   border-radius: 9px;
