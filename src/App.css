@@ -1,0 +1,92 @@
+body {
+  background-color: #272b33;
+  color: white;
+  margin: 0;
+  font-family:  'Segoe UI', Roboto, sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.main-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.main-header h1 {
+  font-size: 3rem;
+  color: #ff9800;
+  text-shadow: 2px 2px #000;
+}
+
+.post-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.char-card {
+  width: 500px; /* Широкая карточка в стиле оригинального сайта */
+  display: flex;
+  background: #3c3e44;
+  border-radius: 9px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+}
+
+.char-img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+}
+
+.char-info {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.char-name {
+  margin: 0 0 5px 0;
+  font-size: 1.5rem;
+}
+
+.char-status {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+.status-icon {
+  height: 9px;
+  width: 9px;
+  margin-right: 6px;
+  border-radius: 50%;
+}
+
+.char-label {
+  color: #9e9e9e;
+  font-size: 12px;
+}
+
+.char-value {
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+@media (max-width: 600px) {
+  .char-card {
+    flex-direction: column;
+    width: 100%;
+  }
+  .char-img {
+    width: 100%;
+    height: 300px;
+  }
+}
